@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  tasks:  
+  - name: create key pair using provided key_material
+    ec2_key:
+      name: iaacbastion
+      region: us-east-1
+      key_material: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDVtV4pliq6N/vOKHpYM59G0hmiARV5RuCVln1aYQvVWZvLVm5U/XVGEbS9AjcFAIzsOOntApnauLq2fytJKepNXD273aPJE5ZO8vjiO3fekuauN3MZJJm2NOwImUP3mSI6F3Q3vec5lC8Ti8yhAPgqoa90wxUT1oQHcIZ35xDiiUb4Wqx/OIozCMDmfzeOL1bQipKknaK/i6aSgCOvId0pLHAHv1/OT4QpwDlCilYHW5IwJo1xUgJHnIRzTG0IZP0P1pTsagiX4VEg3CGif8dMvbjeV7oxaEb3IbbAD5jxUTZlFJPqA/GVpOJK8Tc+cfH2K++2+h3QChelzNJ0oDOL centos@ip-172-31-25-13.eu-west-2.compute.internal'
